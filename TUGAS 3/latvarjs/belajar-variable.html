@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Javascipt</title>
+</head>
+<script>
+    //membuat variable
+    var name = 'ただいま'
+    var visitorCount = 99999
+    var isActive = true
+    var url = 'https://open.spotify.com/playlist/5gS1c22dG4Ld2TWQuTkmH7'
+    bookTitle = 'Belajar Pemrograman Java'
+    delete bookTitle
+    
+    // menampilkan variable ke jendela dialog (alert)
+    alert(' Selamat datang di '+ name)
+    console.log("Hallo ${name}")
+    //menampilkan variable ke dalam HTML
+    document.write(' Nama Situs: '+ name + '<br>' + ' Jumlah Pengunjung: ' + visitorCount + '<br>' + ' Status Aktif: '+isActive+ '<br>'+ ' Alamat URL: '+url+'<br>')
+
+</script>
+
+    <body>
+        <button onClick = "alert('Tombol diklik!')">Klik Saya</button> <br>
+        <script>
+            var yakin = confirm('Apakah kamu yakin akan mengunjungi ただいま?')
+            if (yakin) {
+                window.location = 'https://open.spotify.com/playlist/5gS1c22dG4Ld2TWQuTkmH7'
+            } else {
+                document.write('Baiklah, tetap di sini saja ya....')
+            }
+        </script>
+    </body>
+</html>
